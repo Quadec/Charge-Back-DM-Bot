@@ -26,7 +26,7 @@ bot.on("ready", () => {
 
 
 bot.on("error", (error) => {
-    bot.login(config.token);
+    bot.login(process.env.token);
 });
 
 process.on('unhandledRejection', error => {
